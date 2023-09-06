@@ -87,6 +87,31 @@ var filterModels = DataGridFilterParser.ParseFilters(filterJson);
 var filteredData = sourceData.Where(filterModels);
 ```
 
+## Supported Filter Comparators
+
+DevExGridEnhancer supports a variety of filter comparators that you can use to filter your data. These comparators enable you to define different filter criteria based on your requirements. Below is a list of the supported filter comparators and their descriptions:
+
+- **Equals (`=`)**: Filters data where the specified property is equal to the given value.
+- **Not Equal (`!=` or `<>`)**: Filters data where the specified property is not equal to the given value.
+- **Contains**: Filters data where the specified property contains the given value.
+- **Not Contains**: Filters data where the specified property does not contain the given value.
+- **Greater Than (`>`)**: Filters data where the specified property is greater than the given value.
+- **Greater Than or Equal (`>=`)**: Filters data where the specified property is greater than or equal to the given value.
+- **Less Than (`<`)**: Filters data where the specified property is less than the given value.
+- **Less Than or Equal (`<=`)**: Filters data where the specified property is less than or equal to the given value.
+
+You can use these filter comparators when constructing your filtering criteria in the JSON format, allowing you to create powerful and flexible filters for your data grids.
+
+### Example
+
+Here's an example of how to use the "Equals" filter comparator to filter data where the "status" property is equal to "Active":
+
+```json
+[
+  ["status", "=", "Active"]
+]
+```
+
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues, pull requests, or feedback in the GitHub repository.
