@@ -112,6 +112,9 @@ Here's an example of how to use the "Equals" filter comparator to filter data wh
 ]
 ```
 
+Feel free to mix and match these filter comparators to meet your specific filtering needs. They provide a versatile way to filter and refine your data.
+
+
 ## Contributing
 
 Contributions are welcome! Feel free to submit issues, pull requests, or feedback in the GitHub repository.
