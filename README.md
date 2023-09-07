@@ -72,7 +72,7 @@ To filter data based on one or more criteria, provide a JSON string in the follo
 ]
 ```
 
-In this example, we are filtering data where the `firstName` contains "Cem," the `lastName` contains "Önal," and the country.name contains "Turkey."
+In this example, we are filtering data where the `firstName` contains "Cem," the `lastName` contains "Önal," and the `country.name` contains "Turkey."
 
 To apply filtering to your data using the **DevExGridEnhancer** library, use the `Where` extension method as shown below:
 
