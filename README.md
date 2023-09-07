@@ -37,7 +37,7 @@ To apply sorting to your data using the **DevExGridEnhancer** library, use the `
 
 ```csharp
 // Sorting JSON string
-string sortJson = "sort=[{\"selector\":\"firstName\",\"desc\":false},{\"selector\":\"lastName\",\"desc\":false}]";
+string sortJson = "[{\"selector\":\"firstName\",\"desc\":false},{\"selector\":\"lastName\",\"desc\":false}]";
 
 // Parse sorting information
 var sortModels = DataGridSortParser.ParseSorts(sortJson);
@@ -78,7 +78,7 @@ To apply filtering to your data using the **DevExGridEnhancer** library, use the
 
 ```csharp
 // Filtering JSON string
-string filterJson = "filter=[[\"firstName\",\"contains\",\"Cem\"],\"and\",[\"lastName\",\"contains\",\"Önal\"],\"and\",[\"country.name\",\"contains\",\"Turkey\"]]";
+string filterJson = "[[\"firstName\",\"contains\",\"Cem\"],\"and\",[\"lastName\",\"contains\",\"Önal\"],\"and\",[\"country.name\",\"contains\",\"Turkey\"]]";
 
 // Parse filtering information
 var filterModels = DataGridFilterParser.ParseFilters(filterJson);
